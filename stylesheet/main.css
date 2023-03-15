@@ -55,6 +55,9 @@ table {
 
 body {
     background-image: url('../images/phoneimage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 .main {
@@ -65,14 +68,25 @@ body {
 }
 
 nav {
-    width: 80%;
-    position: sticky;
-    margin: 20px auto;
-    z-index: 1;
+    width: fit-content;
     display: flex;
-    align-items:flex-end;
-    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #000000;
+    padding: 0 20px;
 
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li a {
+   margin-right: 15px;
+   text-decoration: none;
+   color: #fff;
 }
 
 .logo {
@@ -88,16 +102,7 @@ nav {
     text-align: right;
 }
 
-.nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-}
-.nav-links ul li a{
-    color: #fff;
-    text-decoration: none;
-}
-.information {
+/* .information {
     width: 1000px;
     height: 1000px;
     position: absolute;
@@ -113,13 +118,13 @@ nav {
     left: 0;
     border-radius: 50%;
     background: #ccc;
-}
+} */
 
 #date {
     width: 200px;
     height: 30px;
-    position: absolute;
-    margin: 50px;
+    text-align: center;
+    margin: 10px;
     background-color: #fff;
 }
 
@@ -149,6 +154,14 @@ nav {
     text-align: center;
     background-color: #f1f1f1;
   }
+
+  .content {
+    text-align: center;
+  }
+
+  /* .date-bar {
+    text-align: center;
+  } */
 
   @media screen and (max-width: 600px) {
     .column {
