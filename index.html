@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Capstone</title>
     <link rel="stylesheet" href="stylesheet/main.css">
     <script src="https://kit.fontawesome.com/7660dec181.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="main">
+    <header>
         <nav>
-            <div class="logo">
-                <img src="images/logo-phone.png">
-             </div>
-             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="data.html">Data</a></li>
-                <li><a href="favourites.html">Favourites</a></li>
-            </ul>
-        </nav>
-    </div>
+            <img class="logo"src="images/logo-phone.png" alt="logo">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="data.html">Data</a></li>
+                    <li><a href="favourites.html">Favourites</a></li>
+                </ul>
+            </nav>
+    </header>    
     <div class="content">
         <h2>What are you curious about?</h2>
         <input type="text" placeholder="search anything" name="SSS">
@@ -30,6 +29,49 @@
         </form>
 
     </div>
+<!-- on this section we will see all the favourites from the user so far it will have no picture -->
+    <div class="container">
+        <h3 class="tittle">Your favourites</h3>
+
+        <div class="cards-favourites">
+
+        <div class="product" data-name="p-1">
+            <img src="" alt="">
+            <h3>example of a favourite</h3>
+            <div class="info">some information about it</div>
+        </div>
+
+        <div class="product" data-name="p-2">
+            <img src="" alt="">
+            <h3>example of a favourite</h3>
+            <div class="info">some information about it</div>
+        </div>
+
+        <div class="product" data-name="p-3">
+            <img src="" alt="">
+            <h3>example of a favourite</h3>
+            <div class="info">some information about it</div>
+        </div>
+
+        <div class="product" data-name="p-4">
+            <img src="" alt="">
+            <h3>example of a favourite</h3>
+            <div class="info">some information about it</div>
+        </div>
+
+        <div class="product" data-name="p-5">
+            <img src="" alt="">
+            <h3>example of a favourite</h3>
+            <div class="info">some information about it</div>
+        </div>
+
+        <div class="product" data-name="p-6">
+            <img src="" alt="">
+            <h3>example of a favourite</h3>
+            <div class="info">some information about it</div>
+        </div>
+        </div>
+    </div>    
     <script src="script.js"></script>    
 </body>
 </html>

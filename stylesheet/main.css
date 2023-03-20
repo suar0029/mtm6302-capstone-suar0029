@@ -1,4 +1,4 @@
-/* reset css */
+reset css
 
 /http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -25,8 +25,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+HTML5 display-role reset for older browsers 
+ article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -47,7 +47,7 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-} */
+} 
 
 
 
@@ -57,46 +57,35 @@ body {
     background-image: url('../images/phoneimage.jpg');
     
 }
-.main {
-    height: fit-content;
-    position: relative;
-    overflow: hidden;
-    width: 90%;
-    margin: auto;
-    max-width: 1000px;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
 }
 
-nav {
-    width: fit-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    background-color: #000000;
-    padding: 0 20px;
-    margin-right: auto;
-    margin-left: auto;
-
+.logo {
+  cursor: pointer;
 }
 
-ul {
-    display: flex;
-    align-items: center;
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-li a {
-   margin-right: 15px;
-   text-decoration: none;
-   color: #fff;
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color:aqua;
 }
 
 
-
-
-.nav-links {
-    flex: 1;
-    text-align: right;
-}
 
 .information {
     width: 1000px;
@@ -124,10 +113,75 @@ li a {
     background-color: #fff;
 }
 
+/* columns and rows on index.html */
+
+.container {
+  max-width: 1200px;
+  margin:0 auto;
+  padding:3rem 2rem;
+}
+
+.container .tittle {
+  font-size: 3.5rem;
+  color:aquamarine;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container .cards-favourites {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.container .cards-favourites .product {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: white;
+  box-shadow: 0 .5rem 1rem gray(0,0,0,.1);
+  outline: .1rem solid #ccc;
+  outline-offset: -1.5rem;
+  cursor: pointer;
+}
+
+.container .cards-favourites .product:hover {
+  outline: .2rem solid blue;
+  outline-offset: 0;
+}
+
+.container .cards-favourites .product img{
+  height: 25rem;
+}  
+
+.container .cards-favourites .product {
+  transform: scale(.9);
+}
+
+.container .cards-favourites .product h3{
+  padding:.5rem 0;
+  font-size: 2rem;
+  color:antiquewhite;
+}
+
+.container .cards-favourites .product:hover h3{
+  color: red;
+}
+
+
+
+.container .products-favourites .product .info {
+  font-size: 2.5rem;
+  color: red;
+}  
+
+
+
+
 /* columns and rows */
 
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box;
 }
 
 .column {
@@ -181,4 +235,4 @@ li a {
       display: block;
       margin-bottom: 20px;
     }
-  }
+  } */
