@@ -186,10 +186,43 @@ header {
   justify-content: center;
 }
 
+.cards-preview .preview {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  margin: 2rem;
+  width: 40rem;
+}
 
+.cards-preview .preview.active {
+  display: inline-block;
+}
 
+.cards-preview .preview img{
+  height: 30rem;
+}
 
+.cards-preview .preview .fa-times{
+  position: absolute;
+  top: 1rem; right: 4.5rem;
+  cursor: pointer;
+  color: #444;
+  font-size: 4rem;
+}
 
+.cards-preview .preview .fa-times:hover{
+  transform: rotate(90deg);
+}
+
+.cards-preview .preview h3{
+  color: #444;
+  padding: .5rem 0;
+  font-size: 2.5rem;
+}
+
+.cards-preview .preview .stars{
 
 /* columns and rows */
 
