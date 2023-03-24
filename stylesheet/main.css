@@ -222,7 +222,44 @@ header {
   font-size: 2.5rem;
 }
 
-.cards-preview .preview .stars{
+.cards-preview .preview .stars {
+  padding: 1rem 0;
+}
+
+.cards-preview .preview .stars i{
+  padding:#27ae60;
+}
+
+.cards-preview .preview .stars span{
+  color: #999;
+}
+
+.cards-preview .preview p{
+  line-height: 1.5;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  color: #777;
+}
+
+.cards-preview .preview .info-button {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.cards-preview .preview .info-button {
+  flex: 1 1 16rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color:#444;
+  border: 1rem solid #444;
+}
+
+
+
+
+
 
 /* columns and rows */
 
