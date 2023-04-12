@@ -9,32 +9,43 @@
     <script src="https://kit.fontawesome.com/7660dec181.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="main">
-        <nav>
-            <div class="logo">
-                <img src= "images/Artboard 1-100_x_50.png">
-             </div>
-             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="data.html">Data</a></li>
-                <li><a href="favourites.html">Favourites</a></li>
+    <nav>
+        <div id="logo">
+            <img class="logo-original" src="images/original.png" alt="logo-original">
+        </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Favorites</a></li>
+            
             </ul>
-        </nav>
-    </div>
-    <div class="content">
-        <h2>What are you curious about?</h2>
-        <input type="text" placeholder="search anything" name="SSS">
-        <button type="submit"></button><i class="fa-solid fa-magnifying-glass"></i>
-        <form>
-            <input type="date" id="date" name="date">
-        </form>
+		
+	</nav>
+	
+	<div id="content">
+		<form>
+			<label for="search-input">Search by Name:</label>
+			<input type="text" id="search-input" name="search"><br>
+			<label for="date-input">Search by Date:</label><br>
+			<input type="date" id="date-input" name="date"><br><br>
+			<input type="submit" value="Search">
+	    </form>
 
-        <button onclick="Toggle1()" id="btnh1" class="btn"><i class="fa-solid fa-heart"></i></button>
+        <!-- <div id="schedule">
+			<p>Upcoming Events:</p>
+			<ul>
+				<li>Event 1</li>
+				<li>Event 2</li>
+				<li>Event 3</li>
+			</ul>
+		</div> -->
+		
+		<div id="favorites">
+			<h2>Favorites</h2>
+			<p>You have no favorites selected yet.</p>
+		</div>
+	</div>
+   
 
-        <h2>Explanation</h2>
-
-    </div>
-    
     <script src="script.js"></script>    
 </body>
 </html>

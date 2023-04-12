@@ -4,191 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone</title>
+    <title>Document</title>
     <link rel="stylesheet" href="stylesheet/main.css">
     <script src="https://kit.fontawesome.com/7660dec181.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <img class="logo"src="images/logo-phone.png" alt="logo">
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="data.html">Data</a></li>
-                    <li><a href="favourites.html">Favourites</a></li>
-                </ul>
-            </nav>
-    </header>    
-    <div class="content">
-        <h2>What are you curious about?</h2>
-        <input type="text" placeholder="search anything" name="SSS">
-        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <form class="date-bar">
-            <input type="date" id="date" name="date">
-        </form>
-
-    </div>
-<!-- on this section we will see all the favourites from the user so far it will have no picture -->
-    <div class="container">
-        <h3 class="tittle">Your favourites</h3>
-
-        <div class="cards-favourites">
-
-        <div class="card" data-name="p-1">
-            <img src="" alt="">
-            <h3>example of a favourite 1</h3>
-            <div class="info">some information about it</div>
+    <nav>
+        <div id="logo">
+            <img class="logo-original" src="images/original.png" alt="logo-original">
         </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Favorites</a></li>
+            
+            </ul>
+		
+	</nav>
+	
+	<div id="content">
+		<form>
+			<label for="search-input">Search by Name:</label>
+			<input type="text" id="search-input" name="search"><br>
+			<label for="date-input">Search by Date:</label><br>
+			<input type="date" id="date-input" name="date"><br><br>
+			<input type="submit" value="Search">
+	    </form>
 
-        <div class="card" data-name="p-2">
-            <img src="" alt="">
-            <h3>example of a favourite 2</h3>
-            <div class="info">some information about it</div>
-        </div>
-
-        <div class="card" data-name="p-3">
-            <img src="" alt="">
-            <h3>example of a favourite 3</h3>
-            <div class="info">some information about it</div>
-        </div>
-
-        <div class="card" data-name="p-4">
-            <img src="" alt="">
-            <h3>example of a favourite 4</h3>
-            <div class="info">some information about it</div>
-        </div>
-
-        <div class="card" data-name="p-5">
-            <img src="" alt="">
-            <h3>example of a favourite 5</h3>
-            <div class="info">some information about it</div>
-        </div>
-
-        <div class="card" data-name="p-6">
-            <img src="" alt="">
-            <h3>example of a favourite 6</h3>
-            <div class="info">some information about it</div>
-        </div>
-        </div>
-    </div>
-    <div class="card-preview">
-
-        <div class="preview" data-target="p-1">
-            <i class="fas fa-times"></i>
-            <img src="put image-1" alt="">
-            <h3> example of a favourite 1</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>(250)</span>    
+        <!-- <div id="schedule">
+			<p>Upcoming Events:</p>
+			<ul>
+				<li>Event 1</li>
+				<li>Event 2</li>
+				<li>Event 3</li>
+			</ul>
+		</div> -->
+		
+        <main>
+            <h1>Favorites</h1>
+            <div class="card-container">
+              <div class="card">
+                <img src="path/to/image.jpg" alt="Astronomy Object">
+                <h2>Object Name</h2>
+                <p>Description of the object.</p>
+                <button>Remove from Favorites</button>
+              </div>
+              
+              <div class="card">
+                <img src="path/to/image.jpg" alt="Astronomy Object">
+                <h2>Object Name</h2>
+                <p>Description of the object.</p>
+                <button>Remove from Favorites</button>
+              </div>
+              
+              <div class="card">
+                <img src="path/to/image.jpg" alt="Astronomy Object">
+                <h2>Object Name</h2>
+                <p>Description of the object.</p>
+                <button>Remove from Favorites</button>
+              </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cupiditate voluptatem a exercitationem laudantium corporis recusandae, et officia perferendis iure sed similique voluptates, numquam </p>
-            <div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quis reprehenderit quaerat,</div>
-            <div class="info-button">
-                
-
-            </div>
-        </div>
-
-        <div class="preview" data-target="p-2">
-            <i class="fas fa-times"></i>
-            <img src="put image-2" alt="">
-            <h3> example of a favourite 2</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>(250)</span>    
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cupiditate voluptatem a exercitationem laudantium corporis recusandae, et officia perferendis iure sed similique voluptates, numquam </p>
-            <div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quis reprehenderit quaerat,</div>
-            <div class="info-button">
-                
-
-            </div>
-        </div>
-
-        <div class="preview" data-target="p-3">
-            <i class="fas fa-times"></i>
-            <img src="put image-3" alt="">
-            <h3> example of a favourite 3</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>(250)</span>    
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cupiditate voluptatem a exercitationem laudantium corporis recusandae, et officia perferendis iure sed similique voluptates, numquam </p>
-            <div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quis reprehenderit quaerat,</div>
-            <div class="info-button">
-                
-
-            </div>
-        </div>
-
-        <div class="preview" data-target="p-4">
-            <i class="fas fa-times"></i>
-            <img src="put image-4" alt="">
-            <h3> example of a favourite 4</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>(250)</span>    
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cupiditate voluptatem a exercitationem laudantium corporis recusandae, et officia perferendis iure sed similique voluptates, numquam </p>
-            <div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quis reprehenderit quaerat,</div>
-            <div class="info-button">
-                
-
-            </div>
-        </div>
-
-        <div class="preview" data-target="p-5">
-            <i class="fas fa-times"></i>
-            <img src="put image-5" alt="">
-            <h3> example of a favourite 5</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>(250)</span>    
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cupiditate voluptatem a exercitationem laudantium corporis recusandae, et officia perferendis iure sed similique voluptates, numquam </p>
-            <div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quis reprehenderit quaerat,</div>
-            <div class="info-button">
-                
-
-            </div>
-        </div>
-
-        <div class="preview" data-target="p-6">
-            <i class="fas fa-times"></i>
-            <img src="put image-6" alt="">
-            <h3> example of a favourite 6</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>(250)</span>    
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cupiditate voluptatem a exercitationem laudantium corporis recusandae, et officia perferendis iure sed similique voluptates, numquam </p>
-            <div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quis reprehenderit quaerat,</div>
-            <div class="info-button">
-                
-
-            </div>
-        </div>
-
-    </div>
+          </main>
+   
 
     <script src="script.js"></script>    
 </body>

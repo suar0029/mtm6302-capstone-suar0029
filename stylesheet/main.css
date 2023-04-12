@@ -54,268 +54,158 @@ table {
 /* start of the css */
 
 body {
-    background-image: url('../images/phoneimage.jpg');
-    
+	background-image: url("../images/webimage.jpg");
+  background-repeat: no-repeat;
+	background-size: cover;
+  color: #fff;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
+nav {
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+  height: 100px;
 }
 
-.logo {
-  cursor: pointer;
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
 }
 
-.nav_links {
-  list-style: none;
-}
-.nav_links li {
-  display: inline-block;
-  padding: 0px 20px;
+nav li {
+	list-style: none;
+	margin-right: 20px;
 }
 
-.nav_links li a {
-  transition: all 0.3s ease 0s;
+nav a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
 }
 
-.nav_links li a:hover {
-  color:aqua;
+nav a:hover {
+	background-color: #555;
 }
 
-
-
-.information {
-    width: 1000px;
-    height: 1000px;
-    position: absolute;
-    top: 50%;
-    left: -10px;
-    transform: translateY(-50%);
-}
-#circle {
-    width: 1000px;
-    height: 1000px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-    background: red;
+#logo {
+	height: 20px;
+  width: 20px;
 }
 
-#date {
-    width: 200px;
-    height: 30px;
-    text-align: center;
-    margin: 10px;
-    background-color: #fff;
-}
-
-/* columns and rows on index.html */
-
-.container {
-  max-width: 1200px;
-  margin:0 auto;
-  padding:3rem 2rem;
-}
-
-.container .tittle {
-  font-size: 3.5rem;
-  color:rgb(79, 92, 175);
-  margin-bottom: 3rem;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.container .cards-favourites {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 2rem;
-}
-
-.container .cards-favourites .card {
-  text-align: center;
-  padding: 3rem 2rem;
-  background: rgb(38, 42, 80);
-  box-shadow: 0 .5rem 1rem gray(0,0,0,.1);
-  outline: .1rem solid #ccc;
-  outline-offset: -1.5rem;
-  cursor: pointer;
-}
-
-.container .cards-favourites .card:hover {
-  outline: .2rem solid rgb(90, 90, 208);
-  outline-offset: 0;
-}
-
-.container .cards-favourites .card img{
-  height: 25rem;
-}  
-
-.container .cards-favourites .card {
-  transform: scale(.9);
-}
-
-.container .cards-favourites .card h3{
-  padding:.5rem 0;
-  font-size: 2rem;
-  color:rgb(57, 78, 173);
-}
-
-.container .cards-favourites .card:hover h3{
-  color: rgb(106, 108, 230);
-}
-
-
-
-.container .cards-favourites .card .info {
-  font-size: 2.5rem;
-  color: rgb(0, 0, 0);
-}  
-
-.cards-preview {
-  position: fixed;
-  top: 0; left: 0;
-  min-height: 100vh;
-  width: 100%;
-  background: rgba(0,0,0,.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cards-preview .preview {
-  display: none;
-  padding: 2rem;
-  text-align: center;
-  background: black;
+.logo-original {
+  height: 150px;
+  width: 300px;
   position: relative;
-  margin: 2rem;
-  width: 40rem;
+  margin-top: -70px;
 }
 
-.cards-preview .preview.active {
-  display: inline-block;
+#content {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
 }
 
-.cards-preview .preview img{
-  height: 30rem;
+form {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 20px;
 }
 
-.cards-preview .preview .fa-times{
-  position: absolute;
-  top: 1rem; right: 4.5rem;
-  cursor: pointer;
-  color: rgb(55, 54, 66);
-  font-size: 4rem;
+label {
+	margin-right: 10px;
 }
 
-.cards-preview .preview .fa-times:hover{
-  transform: rotate(90deg);
+input[type="text"], input[type="date"], input[type="submit"] {
+	padding: 5px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  margin: 10px;
 }
 
-.cards-preview .preview h3{
-  color: #b04c4c;
-  padding: .5rem 0;
-  font-size: 2.5rem;
+input[type="submit"] {
+	background-color: #333;
+	color: #ffffff;
+	cursor: pointer;
 }
 
-.cards-preview .preview .stars {
-  padding: 1rem 0;
+img {
+  max-width: 600px;
+  min-width: 300px;
 }
 
-.cards-preview .preview .stars i{
-  padding:#848484;
+/* #schedule {
+	margin-bottom: 20px;
 }
 
-.cards-preview .preview .stars span{
-  color: #8f3535;
+#schedule p {
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 
-.cards-preview .preview p{
-  line-height: 1.5;
-  padding: 1rem 0;
-  font-size: 1.6rem;
-  color: #f70000;
+#schedule ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
-.cards-preview .preview .info-button {
+#schedule li {
+	margin-bottom: 5px;
+} */
+
+#favorites {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+
+/* favourites css*/
+
+.card-container {
   display: flex;
-  gap: 1.5rem;
   flex-wrap: wrap;
-  margin-top: 1rem;
 }
 
-.cards-preview .preview .info-button {
-  flex: 1 1 16rem;
-  padding: 1rem;
-  font-size: 1.8rem;
-  color:#f70000;
-  border: 1rem solid #d47f7f;
+.card {
+  width: 300px;
+  margin: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
-
-
-
-
-
-/* columns and rows */
-
-* {
-    /* box-sizing: border-box;
+.card img {
+  width: 100%;
 }
 
-.column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-  }
-  .row {
-    margin: 0 -5px;
+.card h2 {
+  margin: 10px;
+  font-size: 24px;
+  font-weight: bold;
 }
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background-color: #454cb4;
-  }
+.card p {
+  margin: 10px;
+  font-size: 16px;
+}
 
-  .content {
-    text-align: center;
-    margin-top: 100px;
-  }
+.card button {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  .date-bar {
-    text-align: center;
-    display: inline-block;
-  }
-
-  .btn {
-    display: flex;
-    background: transparent;
-    border: none;
-    margin: 87px;
-    font-size: 88px;
-    outline: none;
-    color: rgb(197, 92, 92);
-  }
-
-  .btn i:hover {
-    cursor: pointer;
-  }
-
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  } */
+.card button:hover {
+  background-color: #333;
+  color: #fff;
+}
