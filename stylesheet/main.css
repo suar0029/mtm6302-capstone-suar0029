@@ -154,6 +154,10 @@ img {
 	
 }
 
+#favorites-list button {
+	display: block;
+}
+
 
 #image-container {
 	margin-top: 20px;

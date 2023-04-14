@@ -52,7 +52,7 @@ function displayFavorites() {
     const image = document.createElement('img');
     image.src = url;
     const removeBtn = document.createElement('button');
-    removeBtn.textContent = 'Remove';
+    removeBtn.textContent = 'X';
     removeBtn.addEventListener('click', () => {
       const index = favoritesList.indexOf(url);
       if (index > -1) {
@@ -75,19 +75,5 @@ displayFavorites();
 
 
 
-// // Retrieve the favorites list from local storage
-// const favoritesList = JSON.parse(localStorage.getItem('favorites')) || [];
-
-// // Display the saved images on the webpage
-// const favoritesListElement = document.querySelector('#favorites-list');
-// favoritesListElement.innerHTML = '';
-// favoritesList.forEach((url) => {
-//   const image = document.createElement('img');
-//   image.src = url;
-//   const listItem = document.createElement('li');
-//   listItem.appendChild(image);
-//   favoritesListElement.appendChild(listItem);
-// });
-// }
 
 
