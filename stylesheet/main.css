@@ -138,23 +138,20 @@ input[type="submit"] {
 img {
   max-width: 600px;
   min-width: 300px;
+
 }
 
 #favorites-list img {
-	max-width: 600px;
-	min-width: 300px;
-	width: 50px;
-	height: auto;
+	width: 10px;
+	
+	margin-bottom: 10px;
 
 }
 
 #favorites-list {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
+	display: inline;
 	margin: 0 auto;
-	overflow: scroll;
+	
 }
 
 
@@ -171,5 +168,12 @@ img {
 	/* Adjust the image size for smaller screens */
 	img {
 	  max-width: 90%;
+	}
+
+	#favorites-list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
 	}
   }
