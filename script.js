@@ -43,18 +43,51 @@ form.addEventListener('submit', (event) => {
     .catch(error => console.log(error));
 });
 
-// Retrieve the favorites list from local storage
-const favoritesList = JSON.parse(localStorage.getItem('favorites')) || [];
-
 // Display the saved images on the webpage
-const favoritesListElement = document.querySelector('#favorites-list');
-favoritesListElement.innerHTML = '';
-favoritesList.forEach((url) => {
-  const image = document.createElement('img');
-  image.src = url;
-  const listItem = document.createElement('li');
-  listItem.appendChild(image);
-  favoritesListElement.appendChild(listItem);
-});
+function displayFavorites() {
+  const favoritesList = JSON.parse(localStorage.getItem('favorites')) || [];
+  const favoritesListElement = document.querySelector('#favorites-list');
+  favoritesListElement.innerHTML = '';
+  favoritesList.forEach((url) => {
+    const image = document.createElement('img');
+    image.src = url;
+    const removeBtn = document.createElement('button');
+    removeBtn.textContent = 'Remove';
+    removeBtn.addEventListener('click', () => {
+      const index = favoritesList.indexOf(url);
+      if (index > -1) {
+        favoritesList.splice(index, 1);
+        localStorage.setItem('favorites', JSON.stringify(favoritesList));
+        displayFavorites();
+      }
+    });
+    const listItem = document.createElement('li');
+    listItem.appendChild(image);
+    listItem.appendChild(removeBtn);
+    favoritesListElement.appendChild(listItem);
+  });
+}
+
+displayFavorites();
+
+
+
+
+
+
+// // Retrieve the favorites list from local storage
+// const favoritesList = JSON.parse(localStorage.getItem('favorites')) || [];
+
+// // Display the saved images on the webpage
+// const favoritesListElement = document.querySelector('#favorites-list');
+// favoritesListElement.innerHTML = '';
+// favoritesList.forEach((url) => {
+//   const image = document.createElement('img');
+//   image.src = url;
+//   const listItem = document.createElement('li');
+//   listItem.appendChild(image);
+//   favoritesListElement.appendChild(listItem);
+// });
+// }
 
 
