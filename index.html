@@ -23,48 +23,21 @@
 	
 	<div id="content">
 		<form>
-			<label for="search-input">Search by Name:</label>
-			<input type="text" id="search-input" name="search"><br>
 			<label for="date-input">Search by Date:</label><br>
 			<input type="date" id="date-input" name="date"><br><br>
 			<input type="submit" value="Search">
 	    </form>
 
-        <!-- <div id="schedule">
-			<p>Upcoming Events:</p>
-			<ul>
-				<li>Event 1</li>
-				<li>Event 2</li>
-				<li>Event 3</li>
-			</ul>
-		</div> -->
-		
-        <main>
-            <h1>Favorites</h1>
-            <div class="card-container">
-              <div class="card">
-                <img src="path/to/image.jpg" alt="Astronomy Object">
-                <h2>Object Name</h2>
-                <p>Description of the object.</p>
-                <button>Remove from Favorites</button>
-              </div>
-              
-              <div class="card">
-                <img src="path/to/image.jpg" alt="Astronomy Object">
-                <h2>Object Name</h2>
-                <p>Description of the object.</p>
-                <button>Remove from Favorites</button>
-              </div>
-              
-              <div class="card">
-                <img src="path/to/image.jpg" alt="Astronomy Object">
-                <h2>Object Name</h2>
-                <p>Description of the object.</p>
-                <button>Remove from Favorites</button>
-              </div>
-            </div>
-          </main>
-   
+      <section id="favorites">
+        <h2>Favorite Images</h2>
+        <ul id="favorites-list"></ul>
+      </section>
+
+    <div id="image-container"></div>
+
+    <button id="favorite-btn">Add to Favorites</button>
+  </div>
+
 
     <script src="script.js"></script>    
 </body>

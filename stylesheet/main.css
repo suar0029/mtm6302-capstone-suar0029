@@ -140,72 +140,36 @@ img {
   min-width: 300px;
 }
 
-/* #schedule {
-	margin-bottom: 20px;
+#favorites-list img {
+	max-width: 600px;
+	min-width: 300px;
+	width: 50px;
+	height: auto;
+
 }
 
-#schedule p {
-	font-weight: bold;
-	margin-bottom: 10px;
+#favorites-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin: 0 auto;
+	overflow: scroll;
 }
 
-#schedule ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
 
-#schedule li {
-	margin-bottom: 5px;
-} */
-
-#favorites {
-	border: 1px solid #ccc;
-	padding: 10px;
+#image-container {
 	margin-top: 20px;
-}
+  }
+  
+  #favorite-btn {
+	margin-top: 20px;
+  }
 
 
-/* favourites css*/
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.card {
-  width: 300px;
-  margin: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-}
-
-.card img {
-  width: 100%;
-}
-
-.card h2 {
-  margin: 10px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.card p {
-  margin: 10px;
-  font-size: 16px;
-}
-
-.card button {
-  display: block;
-  margin: 10px;
-  padding: 10px;
-  background-color: #fff;
-  color: #333;
-  border: 2px solid #333;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.card button:hover {
-  background-color: #333;
-  color: #fff;
-}
+  @media screen and (min-width: 768px) {
+	/* Adjust the image size for smaller screens */
+	img {
+	  max-width: 90%;
+	}
+  }
