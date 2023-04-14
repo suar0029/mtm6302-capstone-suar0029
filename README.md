@@ -6,3 +6,5 @@ Project: NASA APOD API
 
 the typography that I am going to use is: Noto Serif Khojki
 I create three different pages. Home: where we can find the question "What are you curious about?" and date box in case the user has the specific date of the event, afterwards it will take us to the information page(2) where we could find all the information about the image that the user wants to see. besides it there is a button, when the user clicks on the button; it would take us to the favourites page (3) where we can see all the information about the favourites images from the user.
+
+Throughtout the develop of the project some changes were made in order to finish this task, therefore we have a simple mockup design, where we can follor the process of search an image with the calendar and then we can save it. The image will be sabe in the local storage when loading the page, we can see the list of our favourite images, and then I add a delete bottom to remove the images that we desire.
